@@ -1,0 +1,41 @@
+// @mixin fontWeightRegular {
+//   $fontRobotoRegular: "Roboto";
+//   font-weight: 400;
+// }
+// @mixin fontWeightBold {
+//   $fontRobotoRegular: "Roboto";
+//   font-weight: 700;
+// }
+/* ********* mixin ************* */
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin fontBold($size, $lineHeight) {
+  font-family: "Roboto";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 700;
+}
+@mixin fontRegular($size, $lineHeight) {
+  font-family: "Roboto";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+/* COlOR */
+$colorWhite: white;
+$colorRedDark: #b03640;
+$colorRed: #c21e39;
+$colorWhiteYellowBG: #f2e8e4;
+$colorYellowLight: #f2ded5;
+$colorBlack: black;
+$colorBlackLight: #14141a;
+$colorFooterBG: #242424;
+$colorFooterText: #d0d0d0; ;
