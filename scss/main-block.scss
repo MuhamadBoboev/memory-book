@@ -1,0 +1,130 @@
+.main {
+  margin-top: 105px;
+  background-color: $colorWhiteYellowBG;
+  margin-bottom: 200px;
+}
+.main-block {
+}
+.main-block__body {
+  display: flex;
+  grid-gap: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main-block__content {
+  margin-top: 191px;
+  margin-bottom: 191px;
+}
+.main-block__pretitle {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $colorRed;
+}
+.main-block__title {
+  margin-top: 10px;
+}
+.main-block__text {
+  @include fontRegular(20px, 150%);
+  font-weight: 300;
+  color: $colorHeaderText;
+  max-width: 410px;
+  margin-top: 66px;
+}
+.main-block__img-block {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin-right: 20px;
+  // background: #c31e39;
+}
+
+.main-block__img-block__fon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // background-image: url("./../img/main-block__fon.png");
+}
+.main-block__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 1;
+}
+.main-block__img__2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 1;
+}
+.main-block__button {
+  display: flex;
+  grid-gap: 15px;
+  position: absolute;
+  bottom: 21%;
+  left: 66%;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  width: 100vmax;
+  font-weight: 300;
+  color: $colorWhite;
+  background-color: $colorBlack;
+  z-index: 2;
+}
+.main-block__svg {
+  margin-top: 2px;
+}
+@media (max-width: 768px) {
+  .main-block__body {
+    flex-wrap: wrap;
+  }
+  .main-block__img-block {
+    height: 310px;
+  }
+  .main-block__pretitle {
+    font-size: 10px;
+  }
+  .main {
+    margin-top: 62px;
+  }
+  .main-block__content {
+    margin-top: 46px;
+    margin-bottom: 0px;
+  }
+  .main-block__text {
+    margin-top: 26px;
+  }
+  .main-block__img {
+    display: none;
+  }
+  .main-block__img__2 {
+    display: inherit;
+  }
+  .main-block__button {
+    left: 67%;
+    bottom: 0;
+    padding: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .main-block__img-block {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+  .main-block__img__2 {
+    object-position: right;
+    object-fit: cover;
+  }
+  .main-block__button {
+    left: 17.6%;
+    bottom: -15px;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .main-block__body {
+    margin-bottom: 86px;
+  }
+}

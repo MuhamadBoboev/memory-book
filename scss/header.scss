@@ -75,7 +75,6 @@
 .menu__list {
   display: flex;
   grid-gap: 30px;
-  padding-bottom: 100px;
 }
 .manu__item:not(:first-child) {
   // margin-left: 60px;
@@ -188,6 +187,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .header__menu.active {
     top: 0;

@@ -35,6 +35,16 @@ body {
 .display-none {
   display: none;
 }
+.title {
+  @include fontRegular(40px, 125%);
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 25px;
+  }
+}
 
 @import "header";
+@import "main-block";
 @import "footer";

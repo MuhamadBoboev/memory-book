@@ -1,5 +1,6 @@
 /* ********* mixin ************* */
 /* COlOR */
+/* color header */
 a {
   text-decoration: none;
 }
@@ -53,6 +54,19 @@ body {
   display: none;
 }
 
+.title {
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: 125%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 25px;
+  }
+}
 .header {
   position: fixed;
   width: 100%;
@@ -141,7 +155,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   grid-gap: 30px;
-  padding-bottom: 100px;
 }
 
 .manu__item {
@@ -267,6 +280,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .header__menu.active {
@@ -357,6 +371,170 @@ body {
     display: block;
   }
 }
+.main {
+  margin-top: 105px;
+  background-color: #f2e8e4;
+  margin-bottom: 200px;
+}
+
+.main-block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-block__content {
+  margin-top: 191px;
+  margin-bottom: 191px;
+}
+
+.main-block__pretitle {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c21e39;
+}
+
+.main-block__title {
+  margin-top: 10px;
+}
+
+.main-block__text {
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  font-weight: 300;
+  color: #8e7b5b;
+  max-width: 410px;
+  margin-top: 66px;
+}
+
+.main-block__img-block {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin-right: 20px;
+}
+
+.main-block__img-block__fon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-block__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-block__img__2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-block__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 15px;
+  position: absolute;
+  bottom: 21%;
+  left: 66%;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  width: 100vmax;
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  z-index: 2;
+}
+
+.main-block__svg {
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .main-block__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .main-block__img-block {
+    height: 310px;
+  }
+
+  .main-block__pretitle {
+    font-size: 10px;
+  }
+
+  .main {
+    margin-top: 62px;
+  }
+
+  .main-block__content {
+    margin-top: 46px;
+    margin-bottom: 0px;
+  }
+
+  .main-block__text {
+    margin-top: 26px;
+  }
+
+  .main-block__img {
+    display: none;
+  }
+
+  .main-block__img__2 {
+    display: inherit;
+  }
+
+  .main-block__button {
+    left: 67%;
+    bottom: 0;
+    padding: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .main-block__img-block {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .main-block__img__2 {
+    -o-object-position: right;
+       object-position: right;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .main-block__button {
+    left: 17.6%;
+    bottom: -15px;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+
+  .main-block__body {
+    margin-bottom: 86px;
+  }
+}
 .footer {
   width: 100%;
   margin-top: 300px;
@@ -427,9 +605,20 @@ body {
 .footer__block_2__contact__number {
   font-family: "Roboto";
   font-size: 18px;
-  line-height: 150%;
+  line-height: 120%;
   font-weight: 700;
   color: white;
+}
+
+.footer__block_2__contact__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 7px;
 }
 
 .footer__block_3 {
@@ -460,6 +649,9 @@ body {
 
   .footer__block_3 {
     grid-area: block_3;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 
   .footer__block_1__suptitle {
@@ -482,7 +674,7 @@ body {
     -ms-grid-column: 3;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .footer_container {
     padding: 0px 35px;
   }
@@ -514,6 +706,12 @@ body {
   .footer__block_2__svg {
     width: 29px;
     height: 29px;
+  }
+
+  .footer__block_3 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 
   .footer__block_1 {
