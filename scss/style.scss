@@ -55,15 +55,22 @@ body {
 .fz-16 {
   @include fontRegular(16px, 150%);
 }
+
+.fz-18 {
+  @include fontRegular(18px, 200%);
+}
 @media (max-width: 768px) {
   .fz-16 {
     font-size: 10px;
+  }
+  .fz-18 {
+    line-height: 150%;
   }
 }
 
 @import "header";
 @import "main-block";
-@import "map1";
 @import "map";
+@import "partners";
 
 @import "footer";
