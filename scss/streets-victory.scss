@@ -1,0 +1,88 @@
+.streets-victory_main {
+  background-color: $colorWhite;
+  padding-top: 86px;
+}
+.streets-victory__items {
+  margin-top: 50px;
+  @include grid(1fr 1fr 1fr, auto);
+  grid-column-gap: 95px;
+  grid-row-gap: 13px;
+  align-items: flex-start;
+}
+.streets-victory__item {
+  grid-column: auto;
+  grid-row: auto;
+}
+.streets-victory__item__body {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 56px;
+  transition: all 0.3s;
+}
+.streets-victory__item__title {
+  @include fontBold(16px, 140%);
+}
+.streets-victory__item__body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $colorBorderVictoruStreet;
+}
+.streets-victory__item__header {
+  display: flex;
+  cursor: pointer;
+}
+.streets-victory__item__header__svg-block {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  cursor: pointer;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: $colorBallBGVictoruStreet;
+  border-radius: 50%;
+}
+.streets-victory__item__header__svg.active {
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+.streets-victory__item__block-text {
+  margin-top: 30px;
+  height: 0px;
+  display: none;
+}
+.streets-victory__item__block-text.active {
+  height: max-content;
+  // opacity: 1;
+  display: block;
+}
+.streets-victory__item__text {
+  @include fontRegular(16px, 156%);
+}
+
+@media (max-width: 1200px) {
+  .streets-victory__items {
+    margin-top: 50px;
+    @include grid(1fr 1fr, auto);
+    grid-column-gap: 95px;
+    grid-row-gap: 13px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .streets-victory__items {
+    margin-top: 50px;
+    @include grid(1fr, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: flex-start;
+  }
+}

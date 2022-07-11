@@ -59,6 +59,11 @@ body {
 .fz-18 {
   @include fontRegular(18px, 200%);
 }
+
+.href-adress a {
+  @include fontRegular(16px, 200%);
+  color: $colorButtonDes;
+}
 @media (max-width: 768px) {
   .fz-16 {
     font-size: 10px;
@@ -66,11 +71,20 @@ body {
   .fz-18 {
     line-height: 150%;
   }
+  .href-adress {
+    font-size: 10px;
+  }
+  .href-adress a {
+    font-size: 10px;
+  }
 }
-
 @import "header";
+
 @import "main-block";
 @import "map";
 @import "partners";
 
+@import "streets-victory";
+
+@import "find-soldier";
 @import "footer";

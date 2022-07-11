@@ -1,0 +1,62 @@
+.find-soldier_main {
+  background-color: $colorWhite;
+  padding-top: 86px;
+}
+.find-soldier__title {
+  margin-top: 18px;
+}
+.find-soldier__text {
+  margin-top: 66px;
+  max-width: 510px;
+}
+.find-soldier__body-items {
+  margin-top: 66px;
+}
+.find-soldier__items {
+  @include grid(1fr 1fr 1fr, 1fr 1fr);
+  grid-gap: 60px;
+}
+.find-soldier__item {
+  position: relative;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.find-soldier__item__body {
+  // position: relative;
+  padding: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 43px;
+  svg {
+    display: flex;
+  }
+}
+.find-soldier__item__svg-vector {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+@media (max-width: 1200px) {
+  .find-soldier__items {
+    @include grid(1fr 1fr, auto);
+    grid-gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .find-soldier__items {
+    @include grid(1fr, auto);
+    grid-gap: 30px;
+  }
+  .find-soldier__item__body {
+    padding-top: 20px;
+    padding-left: 38px;
+    padding-right: 21px;
+    padding-bottom: 80px;
+  }
+  .find-soldier__item {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .find-soldier__title {
+    margin-top: 48px;
+  }
+}

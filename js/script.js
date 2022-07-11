@@ -44,3 +44,25 @@ window.addEventListener("scroll", () => {
 
   lastScrollTop = scrollDistance;
 });
+
+const streatClick = document.querySelectorAll(".streets-victory__item__header");
+streatClick.forEach((e) => {
+  e.addEventListener("click", (event) => {
+    const streatBtn = e.querySelector(".streets-victory__item__header__svg");
+    streatBtn.classList.toggle("active");
+    const blockText = e.parentElement.querySelector(
+      ".streets-victory__item__block-text"
+    );
+    blockText.classList.toggle("active");
+  });
+});
+// streatClick.addEventListener("click", (e) => {
+//   const blockText = document.querySelector(
+//     ".streets-victory__item__block-text"
+//   );
+//   const streatBtn = document.querySelector(
+//     ".streets-victory__item__header__svg"
+//   );
+//   streatBtn.classList.toggle("active");
+//   blockText.classList.toggle("active");
+// });
