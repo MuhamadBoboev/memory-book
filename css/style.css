@@ -716,6 +716,7 @@ body {
   .map-svg {
     width: 24px;
     height: 24px;
+    stroke: #67656f;
   }
 }
 /* ********************* memorial-map-page__list-objects ******************************** */
@@ -1502,10 +1503,13 @@ body {
           flex-direction: column;
   grid-gap: 43px;
 }
-.find-soldier__item__body svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.find-soldier__item__body img {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .find-soldier__item__svg-vector {
