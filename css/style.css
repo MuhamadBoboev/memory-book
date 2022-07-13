@@ -1262,6 +1262,213 @@ body {
     width: 49%;
   }
 }
+.heroes {
+  margin-top: 70px;
+}
+
+.heroes__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.heroes__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.heroes__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.heroes__item {
+  max-width: 440px;
+}
+
+.heroes__item__body {
+  cursor: pointer;
+  position: relative;
+  color: black;
+}
+
+.heroes__item__hover {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  grid-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroes__item__body:hover {
+  outline: 1px solid #f1f2f8;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.heroes__item__body:hover .heroes__item__hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heroes__item__body {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  grid-gap: 23px;
+}
+
+.heroes__item__surname {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.heroes__item__name {
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.heroes__item__text {
+  margin-top: 23px;
+}
+
+@media (max-width: 920px) {
+  .heroes__item__body {
+    padding: 20px;
+    padding-bottom: 50px;
+    outline: 1px solid #f1f2f8;
+    -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .heroes__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
+.heroes-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 115px;
+  grid-gap: 100px;
+}
+
+.heroes-info__img {
+  width: 215px;
+}
+
+.heroes-info__img-block {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 80px;
+}
+.heroes-info__img-block img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.heroes-info__img-block:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 83%;
+  height: 83%;
+  background-color: #f2e8e4;
+}
+
+.heroes-info__surname {
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heroes-info__name {
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.heroes-info__text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-top: 35px;
+  max-width: 725px;
+}
+
+.heroes-info__img-2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .heroes-info__surname {
+    font-size: 24px;
+  }
+
+  .heroes-info__name {
+    font-size: 24px;
+  }
+
+  .heroes-info__img {
+    display: none;
+  }
+
+  .heroes-info__img-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .heroes-info__img-block:after {
+    width: 100%;
+    height: 80%;
+  }
+
+  .heroes-info__img-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 20px;
+  }
+}
 .streets-victory_main {
   background-color: white;
   padding-top: 86px;

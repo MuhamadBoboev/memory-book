@@ -1,0 +1,130 @@
+.heroes {
+  margin-top: 70px;
+}
+.heroes__items {
+  @include grid(1fr 1fr, auto);
+}
+.heroes__item {
+  max-width: 440px;
+}
+
+.heroes__item__body {
+  cursor: pointer;
+  position: relative;
+  color: $colorBlack;
+}
+
+.heroes__item__hover {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  grid-gap: 15px;
+  align-items: center;
+}
+.heroes__item__body:hover {
+  .heroes__item__hover {
+    display: flex;
+  }
+  outline: 1px solid #f1f2f8;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heroes__item__body {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 23px;
+}
+.heroes__item__surname {
+  @include fontBold(24px, 150%);
+}
+.heroes__item__name {
+  @include fontBold(20px, 150%);
+}
+
+.heroes__item__text {
+  margin-top: 23px;
+}
+@media (max-width: 920px) {
+  .heroes__item__body {
+    padding: 20px;
+    padding-bottom: 50px;
+    outline: 1px solid #f1f2f8;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+  }
+  .heroes__items {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
+
+.heroes-info {
+  display: flex;
+  margin-top: 115px;
+  grid-gap: 100px;
+}
+.heroes-info__img {
+  width: 215px;
+}
+.heroes-info__img-block {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  img {
+    display: flex;
+    z-index: 1;
+  }
+}
+.heroes-info__img-block:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 83%;
+  height: 83%;
+  background-color: $colorHeroesItemBG;
+}
+.heroes-info__surname {
+  @include fontBold(40px, 130%);
+  text-transform: uppercase;
+}
+.heroes-info__name {
+  @include fontBold(40px, 130%);
+}
+.heroes-info__text {
+  @include fontRegular(16px, 150%);
+  margin-top: 35px;
+  max-width: 725px;
+}
+.heroes-info__img-2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .heroes-info__surname {
+    font-size: 24px;
+  }
+  .heroes-info__name {
+    font-size: 24px;
+  }
+  .heroes-info__img {
+    display: none;
+  }
+  .heroes-info__img-2 {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .heroes-info__img-block:after {
+    width: 100%;
+    height: 80%;
+  }
+  .heroes-info__img-block {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
