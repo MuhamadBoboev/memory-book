@@ -1,0 +1,385 @@
+// // limitation-period
+
+// .logo {
+//   display: inline-block;
+//   width: 14%;
+// }
+
+// .logo img {
+//   max-width: 100%;
+//   height: auto;
+//   padding-left: 20px;
+// }
+
+// .header-title {
+//   display: inline-block;
+//   width: 70%;
+// }
+
+// .header-title h2 {
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   font-weight: 600;
+// }
+
+// .main-header {
+//   display: block;
+//   width: 100%;
+//   padding: 10px 0;
+//   text-align: center;
+//   font-family: "Playfair Display", serif;
+// }
+
+// .grant_logo {
+//   max-width: 200px;
+//   margin: 0 auto;
+// }
+
+// .secondary-header {
+//   display: block;
+//   width: 100%;
+//   text-align: center;
+//   font-family: "Open Sans Condensed", sans-serif;
+//   font-weight: 300;
+// }
+
+// .col-middle {
+//   display: inline-block;
+//   vertical-align: top;
+// }
+
+// .left,
+// .right {
+//   width: 18%;
+//   padding-top: 50px;
+// }
+
+// .third {
+//   width: 32%;
+// }
+
+// .two-third {
+//   width: 64%;
+// }
+
+// .middle {
+//   display: block;
+//   width: 100%;
+// }
+
+// .fat {
+//   font-weight: 600;
+//   text-align: center;
+//   border: 1px solid #333;
+// }
+
+// .edit-line {
+//   display: block;
+
+//   width: 80%;
+
+//   margin: 5px auto;
+// }
+
+// .table-edit {
+//   padding: 5px 15px;
+// }
+
+// table {
+//   width: 80%; /* Ширина таблицы */
+
+//   margin: 0 auto;
+
+//   border-spacing: 0; /* Расстояние между ячейками */
+// }
+
+// tr:nth-child(2n) {
+//   background: #f0f0f0; /* Цвет фона */
+// }
+
+// thead tr {
+//   background: #666; /* Цвет фона */
+
+//   color: #fff; /* Цвет текста */
+// }
+
+// .center {
+//   width: 60%;
+// }
+
+// .right .info-text {
+//   margin-top: 95px;
+// }
+
+// .right h3 {
+//   padding-left: 20px;
+// }
+
+// .right p {
+//   padding: 20px;
+// }
+
+// .readmore {
+//   cursor: pointer;
+
+//   text-decoration: underline;
+
+//   font-weight: 600;
+
+//   padding-left: 5px;
+// }
+
+// .info-button {
+//   display: block;
+//   text-align: center;
+//   font-size: 25px;
+// }
+
+// .anim {
+//   transition: all 0.3s linear;
+// }
+
+// .inner-info {
+//   padding: 10px 20px;
+// }
+// .inner-info h2 {
+//   width: 100%;
+//   font-size: 40px;
+//   font-family: "Playfair Display", serif;
+//   text-align: center;
+// }
+
+// a {
+//   color: #333;
+
+//   text-decoration: none;
+
+//   font-family: "Playfair Display", serif;
+
+//   font-weight: 600;
+
+//   display: block;
+
+//   font-size: 10pt;
+// }
+
+// a:hover {
+//   text-decoration: underline;
+// }
+
+// .label-link a {
+//   padding: 0 0 20px 20px;
+// }
+
+// #form-info {
+//   text-align: center;
+
+//   padding-bottom: 20px;
+// }
+
+// #message-place {
+//   width: 60%;
+
+//   margin: 0 auto;
+
+//   text-align: center;
+
+//   font-size: 12px;
+
+//   padding: 5px 10px;
+
+//   margin-bottom: 20px;
+// }
+
+// #left_info {
+//   margin-bottom: 20px;
+// }
+
+// .green {
+//   background-color: #eaf8ea;
+
+//   border: 1px solid #47a500;
+// }
+
+// .info-text {
+//   transition: all 0.5s ease-out;
+
+//   overflow: hidden;
+
+//   background: #eeeeee;
+// }
+
+// #infocircle,
+// #closecircle,
+// #arrowup {
+//   cursor: pointer;
+// }
+
+// .info-text p {
+//   font-family: "Open Sans Condensed", sans-serif;
+//   font-weight: 300;
+// }
+
+// .info-text h3 {
+//   font-family: "Playfair Display", serif;
+// }
+
+// .middle-edit {
+//   display: inline-block;
+
+//   margin: 0 auto;
+// }
+
+// .map {
+//   display: block;
+
+//   margin: 70px auto;
+
+//   width: 800px;
+
+//   height: 700px;
+
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+// }
+
+// .bottom {
+//   display: block;
+//   width: 100%;
+//   text-align: center;
+//   letter-spacing: 1px;
+//   font-size: 12px;
+//   font-family: "Open Sans Condensed", sans-serif;
+//   font-weight: 300;
+// }
+
+// .changeably {
+//   display: inline-block;
+
+//   max-width: 40%;
+
+//   font-family: "Podkova", serif;
+
+//   font-weight: 600;
+
+//   line-height: 20px;
+
+//   background-color: #eeeeee;
+
+//   padding: 3px 8px;
+
+//   margin: 3px 0;
+
+//   letter-spacing: 1px;
+
+//   min-height: 26px;
+// }
+
+// .changeably img {
+//   max-width: 150px;
+// }
+// .post-pic: {
+//   display: block;
+//   margin: 0 auto;
+// }
+// .post-pic img {
+//   max-width: 100%;
+//   margin: 0 auto;
+//   display: block;
+// }
+
+// .edit {
+//   padding-left: 20px;
+//   font-size: 15px;
+//   color: #47a500;
+// }
+
+// .delete {
+//   padding-left: 20px;
+//   font-size: 15px;
+//   color: #ff0000;
+// }
+
+// .edit-form {
+//   position: absolute;
+//   top: 50px;
+//   left: 50px;
+//   display: block;
+//   width: 70%;
+//   background-color: #fff;
+//   border: 1px solid #333;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+// }
+
+// .controls {
+//   width: 98%;
+
+//   color: #af0606;
+
+//   text-align: right;
+
+//   padding: 10px;
+// }
+
+// #mestaPrestupleni {
+//   padding: 10px;
+//   max-height: 600px;
+//   overflow-y: scroll;
+// }
+
+// #mestaPrestupleni .readmore {
+//   display: inline-block;
+
+//   padding: 5px 0;
+
+//   color: #333;
+
+//   text-decoration: underline;
+
+//   font-weight: 600;
+
+//   font-size: 10pt;
+// }
+
+// .ymaps-2-1-79-copyright {
+//   top: -33px !important;
+//   right: 5px;
+// }
+
+// @media all and (max-width: 768px) {
+//   .logo {
+//     display: block;
+
+//     width: 100%;
+
+//     text-align: center;
+//   }
+
+//   .logo img {
+//     max-width: 80%;
+//   }
+
+//   .header-title {
+//     display: block;
+
+//     width: 100%;
+//   }
+
+//   .main-header h1 {
+//     padding: 0 10px;
+//   }
+
+//   .main-header {
+//     line-height: normal;
+//   }
+
+//   .left,
+//   .right,
+//   .center {
+//     display: block;
+//     width: 100%;
+//   }
+
+//   .map {
+//     width: 100%;
+//   }
+// }
